@@ -1,0 +1,23 @@
+{
+    "skills": ["HTML", "CSS", "JavaScript", "React", "Node.js", "Tailwind CSS", "MongoDB"],
+    "projects": [
+        {
+            "title": "Portfolio Website",
+            "description": "A personal portfolio showcasing my projects.",
+            "image": "assets/login.png",
+            "link": "https://myportfolio.com"
+        },
+        {
+            "title": "Task Manager",
+            "description": "A web app for managing tasks efficiently.",
+            "image": "assets/dash.png",
+            "link": "https://taskmanager.com"
+        },
+        {
+            "title": "E-Commerce App",
+            "description": "A full-stack e-commerce platform built with MERN stack.",
+            "image": "assets/ecom.png",
+            "link": "https://ecommerce.com"
+        }
+    ]
+}

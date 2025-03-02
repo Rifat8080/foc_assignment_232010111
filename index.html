@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Navbar -->
+  <!-- Navbar -->
+  <header class="bg-gray-800 shadow-lg p-5 sticky top-0 z-50">
+    <nav class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Portfolio</h1>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-white focus:outline-none" aria-expanded="false" aria-label="Toggle navigation">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+
+        <!-- Navbar Menu -->
+        <ul id="menu" class="hidden md:flex space-x-6">
+            <li><a href="#about" class="hover:text-yellow-500">About</a></li>
+            <li><a href="#skills" class="hover:text-yellow-500">Skills</a></li>
+            <li><a href="#projects" class="hover:text-yellow-500">Projects</a></li>
+            <li><a href="#contact" class="hover:text-yellow-500">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+        <ul class="flex flex-col space-y-4 p-5">
+            <li><a href="#about" class="hover:text-yellow-500">About</a></li>
+            <li><a href="#skills" class="hover:text-yellow-500">Skills</a></li>
+            <li><a href="#projects" class="hover:text-yellow-500">Projects</a></li>
+            <li><a href="#contact" class="hover:text-yellow-500">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+    
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+<section class="text-center py-20 relative">
+    <!-- 3D Animation Canvas -->
+    <div id="hero-3d" class="absolute top-0 left-0 w-full h-full z-[-1]"></div>
+    <h2 class="text-4xl font-bold">Hi, I'm <span class="text-yellow-500">Mahadi Hasan</span></h2>
+    <p class="text-gray-400 text-lg mt-4">A Passionate Web Developer</p>
+    <a href="#contact" class="mt-6 px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-black font-bold rounded-lg inline-block text-center">Hire Me</a>
+
+    
+</section>
+
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto py-16 px-8">
+        <h2 class="text-3xl font-bold text-center">About Me</h2>
+        <p class="text-gray-400 text-center mt-4">I am a web developer with expertise in front-end and back-end technologies.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container mx-auto py-16 px-8">
+        <h2 class="text-3xl font-bold text-center">Skills</h2>
+        <div class="flex flex-wrap justify-center mt-6" id="skills-list"></div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mx-auto py-16 px-8">
+        <h2 class="text-3xl font-bold text-center">Projects</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8" id="projects-container"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto py-16 px-8 text-center">
+        <h2 class="text-3xl font-bold">Contact Me</h2>
+        <p class="text-gray-400 mt-4">Feel free to reach out via email or social media.</p>
+        <a href="mailto:your-email@example.com" class="mt-6 px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-black font-bold rounded-lg inline-block">Email Me</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-center p-4 mt-10">
+        <p>© 2025 John Doe. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function () {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
